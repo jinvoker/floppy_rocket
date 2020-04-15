@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://balck_backgroundpng.png" type="Texture" id=1]
+[ext_resource path="res://obstacles_top.tscn" type="PackedScene" id=2]
+
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 288, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 100, 0 )
+
+[node name="Area2D" parent="ParallaxLayer2" instance=ExtResource( 2 )]
