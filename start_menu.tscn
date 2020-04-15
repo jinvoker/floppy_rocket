@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://dummy_rocket_vertical.tscn" type="PackedScene" id=3]
+[ext_resource path="res://start_menu.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+font_data = ExtResource( 2 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 20.9883
+margin_top = 23.5126
+margin_right = 133.988
+margin_bottom = 38.5126
+custom_fonts/font = SubResource( 1 )
+text = "FLOPPY ROCKET"
+align = 2
+percent_visible = -0.0833333
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="start" type="Button" parent="."]
+margin_left = 11.9627
+margin_top = 83.1861
+margin_right = 54.9627
+margin_bottom = 103.186
+custom_fonts/font = ExtResource( 1 )
+text = "Start"
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="credits" type="Button" parent="."]
+margin_left = 13.2449
+margin_top = 162.278
+margin_right = 61.9966
+margin_bottom = 182.278
+custom_fonts/font = ExtResource( 1 )
+text = "Quit"
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit" type="Button" parent="."]
+margin_left = 11.4335
+margin_top = 122.299
+margin_right = 78.8187
+margin_bottom = 142.299
+custom_fonts/font = ExtResource( 1 )
+text = "Credits"
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 121.819, 108.778 )
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

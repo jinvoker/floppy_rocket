@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="FLOPPY ROCKET"
-run/main_scene="res://main_window.tscn"
+run/main_scene="res://start_menu.tscn"
 boot_splash/image="res://rocket.png"
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 

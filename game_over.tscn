@@ -2,7 +2,7 @@
 
 [ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://game_over.gd" type="Script" id=2]
-[ext_resource path="res://dummy_rocket.tscn" type="PackedScene" id=3]
+[ext_resource path="res://dummy_rocket_horizontal.tscn" type="PackedScene" id=3]
 [ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
