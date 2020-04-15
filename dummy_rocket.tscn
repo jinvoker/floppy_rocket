@@ -1,8 +1,6 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://rocket.png" type="Texture" id=1]
-[ext_resource path="res://rocket.gd" type="Script" id=2]
-[ext_resource path="res://rocket_flare.ogg" type="AudioStream" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -12,18 +10,15 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 16.7635, 8.57205 )
-
-[sub_resource type="Gradient" id=3]
+[sub_resource type="Gradient" id=2]
 offsets = PoolRealArray( 0.281481, 0.318519, 0.5, 0.6, 0.8, 0.9, 1 )
 colors = PoolColorArray( 1, 0.352941, 0, 1, 1, 0.960784, 0, 1, 0.490196, 0, 1, 1, 0, 0.156863, 1, 1, 0, 0.976471, 1, 1, 0, 1, 0.0392157, 1, 1, 0, 0, 1 )
 
-[sub_resource type="GradientTexture" id=4]
-gradient = SubResource( 3 )
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
 width = 14
 
-[sub_resource type="ParticlesMaterial" id=5]
+[sub_resource type="ParticlesMaterial" id=4]
 lifetime_randomness = 0.54
 emission_shape = 2
 emission_box_extents = Vector3( 4, 4, 1 )
@@ -37,19 +32,14 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 4.5
 scale_random = 0.4
-color_ramp = SubResource( 4 )
+color_ramp = SubResource( 3 )
 
-[node name="RigidBody2D" type="RigidBody2D"]
-gravity_scale = 4.0
-script = ExtResource( 2 )
+[node name="StaticBody2D" type="Position2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 rotation = 1.5708
 frames = SubResource( 1 )
 animation = "idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 2 )
 
 [node name="Particles2D" type="Particles2D" parent="."]
 position = Vector2( -15, 0 )
@@ -60,11 +50,4 @@ lifetime = 1.4
 speed_scale = 2.8
 randomness = 0.05
 local_coords = false
-process_material = SubResource( 5 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
-
-[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-[connection signal="body_entered" from="." to="." method="_on_RigidBody2D_body_entered"]
-[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+process_material = SubResource( 4 )

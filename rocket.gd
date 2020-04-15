@@ -57,15 +57,6 @@ func _process(delta):
 	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+func _on_VisibilityNotifier2D_screen_exited():
+	get_tree().change_scene("res://game_over.tscn")
+	
