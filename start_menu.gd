@@ -4,7 +4,7 @@ extends Node2D
 func _ready():
 	if global.score > global.highscore:
 		global.highscore=global.score
-	$highscore_label.text="Highscore: "+ str(global.highscore)
+	$highscore_label.text="Highscore : "+str(global.highscore)
 
 #  'delta' is the elapsed time since the previous frame.
 
@@ -18,3 +18,5 @@ func _on_credits_pressed():
 
 func _on_quit_pressed():
 	get_tree().quit()
+
+

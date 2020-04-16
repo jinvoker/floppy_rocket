@@ -21,5 +21,6 @@ func _on_VisibilityNotifier2D_screen_exited():
 
 func _on_Area2D_body_entered(body):
 	get_tree().change_scene("res://game_over.tscn")
+	
 	#get_tree().quit()
 	#Engine.time_scale(0.1)

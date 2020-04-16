@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://rocket.tscn" type="PackedScene" id=2]
 [ext_resource path="res://main_window.gd" type="Script" id=3]
+[ext_resource path="res://pause.png" type="Texture" id=4]
+[ext_resource path="res://balck_backgroundpng.png" type="Texture" id=5]
+[ext_resource path="res://TextureRect.gd" type="Script" id=6]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
@@ -32,5 +35,58 @@ align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="pause_button" type="TextureButton" parent="."]
+margin_left = 9.86131
+margin_top = 224.564
+margin_right = 23.8613
+margin_bottom = 238.564
+rect_scale = Vector2( 1.5, 1.5 )
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+pause_mode = 2
+visible = false
+modulate = Color( 1, 1, 1, 0.643137 )
+margin_right = 320.0
+margin_bottom = 480.0
+texture = ExtResource( 5 )
+expand = true
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resume" type="Button" parent="TextureRect"]
+margin_left = 37.8386
+margin_top = 83.6704
+margin_right = 93.8386
+margin_bottom = 102.67
+custom_fonts/font = ExtResource( 1 )
+text = "Resume"
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit" type="Button" parent="TextureRect"]
+margin_left = 40.0
+margin_top = 123.0
+margin_right = 52.0
+margin_bottom = 130.0
+custom_fonts/font = ExtResource( 1 )
+text = "Quit"
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="score_timer" to="." method="_on_score_timer_timeout"]
+[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[connection signal="pressed" from="TextureRect/resume" to="TextureRect" method="_on_resume_pressed"]
+[connection signal="pressed" from="TextureRect/quit" to="TextureRect" method="_on_quit_pressed"]

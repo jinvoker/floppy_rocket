@@ -7,6 +7,7 @@
 extents = Vector2( 12.733, 79.8575 )
 
 [node name="Area2D" type="Area2D"]
+show_behind_parent = true
 position = Vector2( 140, -70 )
 script = ExtResource( 1 )
 

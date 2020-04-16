@@ -26,6 +26,19 @@ func _on_score_timer_timeout():
 
 	
 func _physics_process(delta):
-	$Label.text="score: " + str(global.score)
+	$Label.text="score : " + str(global.score)
 
 
+
+
+
+
+
+
+
+func _on_pause_button_pressed():
+	get_tree().set_pause(true)
+	$TextureRect.visible=true
+
+	
+	
