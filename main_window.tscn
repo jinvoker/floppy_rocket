@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://rocket.tscn" type="PackedScene" id=2]
 [ext_resource path="res://main_window.gd" type="Script" id=3]
 
@@ -12,4 +13,24 @@ position = Vector2( 50, 20 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 1.8
 autostart = true
+
+[node name="score_timer" type="Timer" parent="."]
+wait_time = 1.9
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 47.0244
+margin_top = 1.38159
+margin_right = 87.0244
+margin_bottom = 15.3816
+custom_fonts/font = ExtResource( 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="score_timer" to="." method="_on_score_timer_timeout"]

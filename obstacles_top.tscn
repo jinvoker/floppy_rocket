@@ -9,16 +9,10 @@ extents = Vector2( 12.733, 79.8575 )
 [node name="Area2D" type="Area2D"]
 position = Vector2( 140, -70 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 centered = false
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 13, 80 )

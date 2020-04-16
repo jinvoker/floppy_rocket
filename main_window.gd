@@ -4,6 +4,9 @@ extends Node2D
 var obstacle_top_load = preload("res://obstacles_top.tscn")
 var obstacle_bot_load = preload("res://obstacles_bottom.tscn")
 
+func _ready():
+	global.score=0
+	
 
 
 
@@ -15,3 +18,14 @@ func _on_Timer_timeout():
 	add_child(obstacle_top_obj)
 	add_child(obstacle_bot_obj)
 	
+
+
+func _on_score_timer_timeout():
+	global.score+=1
+
+
+	
+func _physics_process(delta):
+	$Label.text="score: " + str(global.score)
+
+
