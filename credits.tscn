@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://credits.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 0, 230 )
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 56.0
+margin_top = 12.0
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 1 )
+text = "CREDITS"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

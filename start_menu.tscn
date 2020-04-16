@@ -24,7 +24,6 @@ margin_bottom = 38.5126
 custom_fonts/font = SubResource( 1 )
 text = "FLOPPY ROCKET"
 align = 2
-percent_visible = -0.0833333
 __meta__ = {
 "_edit_use_anchors_": false
 }
