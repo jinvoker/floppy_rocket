@@ -17,14 +17,13 @@ _global_script_class_icons={
 
 config/name="FLOPPY ROCKET"
 run/main_scene="res://start_menu.tscn"
-boot_splash/image="res://rocket.png"
-boot_splash/fullsize=false
+boot_splash/image="res://balck_backgroundpng.png"
 boot_splash/use_filter=false
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 
 [autoload]
 
-global="*res://score.tscn"
+global="*res://score.gd"
 
 [display]
 

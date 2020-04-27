@@ -1,10 +1,8 @@
 extends Node2D
 
 
-func _ready():
-	if global.score > global.highscore:
-		global.highscore=global.score
-	$highscore_label.text="Highscore : "+str(global.highscore)
+func _process(delta):
+	$highscore_label.text="Highscore : "+str(global.savedscore)
 
 #  'delta' is the elapsed time since the previous frame.
 

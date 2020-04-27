@@ -8,10 +8,10 @@ position = Vector2( 0, 230 )
 script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 56.0
+margin_left = 43.6764
 margin_top = 12.0
-margin_right = 40.0
-margin_bottom = 14.0
+margin_right = 97.6764
+margin_bottom = 25.0
 custom_fonts/font = ExtResource( 1 )
 text = "CREDITS"
 align = 1
