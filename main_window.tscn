@@ -1,12 +1,19 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://rocket.tscn" type="PackedScene" id=2]
 [ext_resource path="res://main_window.gd" type="Script" id=3]
 [ext_resource path="res://pause.png" type="Texture" id=4]
+[ext_resource path="res://Infoscreen.gd" type="Script" id=5]
 [ext_resource path="res://TextureRect.gd" type="Script" id=6]
+[ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://tap_icon.png" type="Texture" id=8]
 
 [sub_resource type="ImageTexture" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 22
+font_data = ExtResource( 7 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
@@ -38,10 +45,10 @@ __meta__ = {
 }
 
 [node name="pause_button" type="TextureButton" parent="."]
-margin_left = 7.14791
-margin_top = 260.151
-margin_right = 21.1479
-margin_bottom = 274.151
+margin_left = 5.75124
+margin_top = 226.631
+margin_right = 19.7512
+margin_bottom = 240.631
 rect_scale = Vector2( 1.5, 1.5 )
 texture_normal = ExtResource( 4 )
 __meta__ = {
@@ -83,6 +90,44 @@ custom_fonts/font = ExtResource( 1 )
 text = "Quit"
 flat = true
 align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Infoscreen" type="TextureRect" parent="."]
+pause_mode = 2
+margin_right = 144.0
+margin_bottom = 256.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Infoscreen"]
+position = Vector2( 87.5553, 74.7486 )
+scale = Vector2( 2.2, 2 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Label" type="Label" parent="Infoscreen"]
+margin_left = 4.22327
+margin_top = 131.586
+margin_right = 203.223
+margin_bottom = 162.586
+custom_fonts/font = ExtResource( 1 )
+text = "to keep floppy rocket alive"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Infoscreen"]
+margin_left = 49.7021
+margin_top = 93.0281
+margin_right = 89.7021
+margin_bottom = 111.028
+custom_fonts/font = SubResource( 2 )
+text = "TAP"
 __meta__ = {
 "_edit_use_anchors_": false
 }
