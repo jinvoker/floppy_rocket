@@ -45,10 +45,10 @@ __meta__ = {
 }
 
 [node name="pause_button" type="TextureButton" parent="."]
-margin_left = 5.75124
-margin_top = 226.631
-margin_right = 19.7512
-margin_bottom = 240.631
+margin_left = 7.74147
+margin_top = 257.148
+margin_right = 21.7415
+margin_bottom = 271.148
 rect_scale = Vector2( 1.5, 1.5 )
 texture_normal = ExtResource( 4 )
 __meta__ = {
@@ -104,28 +104,40 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="Infoscreen"]
-position = Vector2( 87.5553, 74.7486 )
+position = Vector2( 75.6137, 113.227 )
 scale = Vector2( 2.2, 2 )
 texture = ExtResource( 8 )
 centered = false
 
-[node name="Label" type="Label" parent="Infoscreen"]
-margin_left = 4.22327
-margin_top = 131.586
-margin_right = 203.223
-margin_bottom = 162.586
+[node name="getready" type="Label" parent="Infoscreen"]
+margin_left = 33.093
+margin_top = 63.9947
+margin_right = 112.093
+margin_bottom = 77.9947
+custom_fonts/font = ExtResource( 1 )
+text = "GET READY !"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="alive" type="Label" parent="Infoscreen"]
+margin_left = -4.05847
+margin_top = 165.498
+margin_right = 148.942
+margin_bottom = 211.498
 custom_fonts/font = ExtResource( 1 )
 text = "to keep floppy rocket alive"
+align = 1
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="Infoscreen"]
-margin_left = 49.7021
-margin_top = 93.0281
-margin_right = 89.7021
-margin_bottom = 111.028
+[node name="tap" type="Label" parent="Infoscreen"]
+margin_left = 37.7605
+margin_top = 131.506
+margin_right = 77.7605
+margin_bottom = 149.506
 custom_fonts/font = SubResource( 2 )
 text = "TAP"
 __meta__ = {

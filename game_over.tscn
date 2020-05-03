@@ -17,9 +17,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -17.0
-margin_top = -6.5063
+margin_top = -15.3088
 margin_right = 17.0
-margin_bottom = 12.4937
+margin_bottom = 3.69116
 custom_fonts/font = ExtResource( 1 )
 text = "quit"
 flat = true
@@ -27,7 +27,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
+[node name="GAME_OVER" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -34.5
@@ -46,9 +46,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -36.5
-margin_top = -45.5397
+margin_top = -54.3422
 margin_right = 36.5
-margin_bottom = -15.5316
+margin_bottom = -24.3341
 custom_fonts/font = SubResource( 1 )
 text = "play again"
 flat = true
@@ -56,7 +56,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="main_menu" type="Button" parent="."]
+margin_left = 37.4867
+margin_top = 159.535
+margin_right = 108.487
+margin_bottom = 179.535
+custom_fonts/font = ExtResource( 1 )
+text = "main menu"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="StaticBody2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 126.038, 184.598 )
+position = Vector2( 126.038, 223.769 )
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="play_again" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="main_menu" to="." method="_on_main_menu_pressed"]
