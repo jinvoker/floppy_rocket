@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://obstacles_top.gd" type="Script" id=1]
 [ext_resource path="res://pipe_green_top.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 12.733, 79.8575 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1.15988, 73.8144 )
 
 [node name="Area2D" type="Area2D"]
 show_behind_parent = true
@@ -22,5 +25,16 @@ shape = SubResource( 1 )
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 position = Vector2( 13.775, 80.6456 )
 scale = Vector2( 1.3325, 8.07153 )
+
+[node name="counter_collision" type="Area2D" parent="."]
+position = Vector2( 13.2964, 162.881 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="counter_collision"]
+position = Vector2( -0.0863342, 60.9418 )
+shape = SubResource( 2 )
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="body_entered" from="counter_collision" to="." method="_on_counter_collision_body_entered"]
