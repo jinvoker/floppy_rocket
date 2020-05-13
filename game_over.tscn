@@ -1,12 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://game_over.gd" type="Script" id=2]
 [ext_resource path="res://dummy_rocket_horizontal.tscn" type="PackedScene" id=3]
-[ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=4]
-
-[sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 4 )
 
 [node name="Node" type="Node"]
 script = ExtResource( 2 )
@@ -16,10 +12,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -17.0
+margin_left = -22.7217
 margin_top = -15.3088
-margin_right = 17.0
-margin_bottom = 3.69116
+margin_right = 17.2783
+margin_bottom = 7.69119
 custom_fonts/font = ExtResource( 1 )
 text = "quit"
 flat = true
@@ -30,10 +26,10 @@ __meta__ = {
 [node name="GAME_OVER" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -34.5
+margin_left = -41.9821
 margin_top = 22.0
-margin_right = 34.5
-margin_bottom = 13.0
+margin_right = 44.0179
+margin_bottom = 39.0
 custom_fonts/font = ExtResource( 1 )
 text = "GAME OVER"
 __meta__ = {
@@ -45,11 +41,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -36.5
+margin_left = -43.542
 margin_top = -54.3422
-margin_right = 36.5
+margin_right = 46.458
 margin_bottom = -24.3341
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 1 )
 text = "play again"
 flat = true
 __meta__ = {
@@ -57,10 +53,10 @@ __meta__ = {
 }
 
 [node name="main_menu" type="Button" parent="."]
-margin_left = 37.4867
-margin_top = 159.535
-margin_right = 108.487
-margin_bottom = 179.535
+margin_left = 30.4447
+margin_top = 156.894
+margin_right = 117.445
+margin_bottom = 179.894
 custom_fonts/font = ExtResource( 1 )
 text = "main menu"
 flat = true

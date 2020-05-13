@@ -3,16 +3,16 @@ extends Node2D
 
 var score=0
 
-
+var rocketselect=[]
 
 var savedscore=0
 
 
 func _process(delta):
 
-	print('score =',global.score)
+	#print('score =',global.score)
 	load_score()
-	print("the saved score is : ",savedscore)
+	#print("the saved score is : ",savedscore)
 	
 	if score > savedscore:
 		save_score()

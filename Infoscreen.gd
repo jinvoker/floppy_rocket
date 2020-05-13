@@ -3,6 +3,7 @@ extends TextureRect
 
 func _ready():
 	get_tree().set_pause(true)
+	
 # Called when the node enters the scene tree for the first time.
 func _process(delta):
 		
@@ -10,6 +11,10 @@ func _process(delta):
 			get_tree().set_pause(false)
 			visible=false
 			pass # Replace with function body.
+		
+		
+	
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

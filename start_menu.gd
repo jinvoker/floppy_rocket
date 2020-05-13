@@ -7,7 +7,7 @@ func _process(delta):
 #  'delta' is the elapsed time since the previous frame.
 
 func _on_start_pressed():
-	get_tree().change_scene("res://main_window.tscn")
+	get_tree().change_scene("res://rocketload.tscn")
 
 
 func _on_credits_pressed():

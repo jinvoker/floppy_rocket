@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/androidbackground.png-ce0cf41b5771b6d9b68bfb63b1976977.stex"
+path="res://.import/game.png-f11ea228ab106aac82a63d31bdb2c3b9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/icons/androidbackground.png"
-dest_files=[ "res://.import/androidbackground.png-ce0cf41b5771b6d9b68bfb63b1976977.stex" ]
+source_file="res://game.png"
+dest_files=[ "res://.import/game.png-f11ea228ab106aac82a63d31bdb2c3b9.stex" ]
 
 [params]
 

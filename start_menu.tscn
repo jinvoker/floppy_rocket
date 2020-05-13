@@ -75,11 +75,12 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 29.0
-margin_top = 246.0
-margin_right = 92.0
-margin_bottom = 242.908
+margin_left = 22.0672
+margin_top = 223.941
+margin_right = 85.0672
+margin_bottom = 240.941
 custom_fonts/font = ExtResource( 1 )
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

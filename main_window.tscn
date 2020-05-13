@@ -46,9 +46,9 @@ __meta__ = {
 
 [node name="pause_button" type="TextureButton" parent="."]
 margin_left = 7.74147
-margin_top = 257.148
+margin_top = 227.011
 margin_right = 21.7415
-margin_bottom = 271.148
+margin_bottom = 241.011
 rect_scale = Vector2( 1.5, 1.5 )
 texture_normal = ExtResource( 4 )
 __meta__ = {

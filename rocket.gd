@@ -1,10 +1,17 @@
 extends RigidBody2D
 
 
+var rockettexture=load(str(global.rocketselect))
+
 
 
 
 func _ready():
+	print('rocket=',global.rocketselect)
+	$Sprite.set_texture(load(global.rocketselect))
+	
+
+	
 	
 	#set_linear_velocity(Vector2(70,get_linear_velocity().y))
 	set_angular_velocity(1)
