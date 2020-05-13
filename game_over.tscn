@@ -12,9 +12,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -22.7217
+margin_left = -20.9612
 margin_top = -15.3088
-margin_right = 17.2783
+margin_right = 19.0388
 margin_bottom = 7.69119
 custom_fonts/font = ExtResource( 1 )
 text = "quit"
@@ -53,10 +53,10 @@ __meta__ = {
 }
 
 [node name="main_menu" type="Button" parent="."]
-margin_left = 30.4447
-margin_top = 156.894
-margin_right = 117.445
-margin_bottom = 179.894
+margin_left = 29.1243
+margin_top = 150.732
+margin_right = 116.125
+margin_bottom = 173.732
 custom_fonts/font = ExtResource( 1 )
 text = "main menu"
 flat = true
