@@ -54,9 +54,9 @@ __meta__ = {
 
 [node name="main_menu" type="Button" parent="."]
 margin_left = 29.1243
-margin_top = 150.732
+margin_top = 147.651
 margin_right = 116.125
-margin_bottom = 173.732
+margin_bottom = 170.651
 custom_fonts/font = ExtResource( 1 )
 text = "main menu"
 flat = true

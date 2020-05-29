@@ -14,9 +14,8 @@ centered = false
 script = ExtResource( 3 )
 
 [node name="Light2D" type="Light2D" parent="."]
-visible = false
 position = Vector2( 47.4337, 40.3919 )
-scale = Vector2( 4.84249, 2.11228 )
+scale = Vector2( 4.84249, 1.89945 )
 texture = ExtResource( 2 )
 texture_scale = 0.1
 color = Color( 0.545098, 0.898039, 0.615686, 1 )

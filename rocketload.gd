@@ -1,6 +1,6 @@
 extends Node2D
 
-var rocketlist=['res://sprites/rockets/rocket.png','res://sprites/rockets/rocket_1.png']
+var rocketlist=['res://sprites/rockets/rocket.png','res://sprites/rockets/rocket_1.png','res://sprites/rockets/rocket_2.png']
 
 var y=35
 

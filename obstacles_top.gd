@@ -34,5 +34,6 @@ func _on_Area2D_body_entered(body):
 func _on_counter_collision_body_entered(body):
 	if body.name=='RigidBody2D':
 		global.score+=1
+		$AudioStreamPlayer.play(0.0)
 		print('entered = ',body.name)
 	pass # Replace with function body.

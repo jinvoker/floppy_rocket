@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://obstacles_top.gd" type="Script" id=1]
 [ext_resource path="res://pipe_green_top.png" type="Texture" id=2]
+[ext_resource path="res://ding.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 12.733, 79.8575 )
@@ -35,6 +36,11 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="counter_collision"]
 position = Vector2( -0.0863342, 60.9418 )
 shape = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -17.0
+pitch_scale = 0.5
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
 [connection signal="body_entered" from="counter_collision" to="." method="_on_counter_collision_body_entered"]
