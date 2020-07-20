@@ -11,12 +11,3 @@ func _process(delta):
 			get_tree().set_pause(false)
 			visible=false
 			pass # Replace with function body.
-		
-		
-	
-	
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

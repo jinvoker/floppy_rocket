@@ -1,16 +1,13 @@
 extends Node2D
 
-var rocketlist=['res://sprites/rockets/rocket.png','res://sprites/rockets/rocket_1.png','res://sprites/rockets/rocket_2.png']
-
-var y=35
-
+var rocketlist=['res://sprites/rockets/rocket.png','res://sprites/rockets/rocket_1.png','res://sprites/rockets/rocket_2.png'] # Absolute path of rocketfile to be loaded.
+var y=35  # Vertical distance between rockets in selection screen (start).
 
 var count=1
 
 var list2=[]
 
 func _ready():
-
 	add_buttons()
 	pass 
 
@@ -33,13 +30,11 @@ func add_buttons():
 		but.connect("pressed",self,'namer',[but])
 		add_child(but)
 		
-		
 		y+=45
 
-		count+=1
+		count+=1 #Debug
 		
 func namer(which):
 	print(which.get_text()) 
 	global.rocketselect=which.get_text()   
-	
 	get_tree().change_scene("res://main_window.tscn")

@@ -1,8 +1,6 @@
 extends Sprite
 
 
-
-
 func _process(delta):
 	yield(get_tree().create_timer(1),"timeout")
 	$Light2D.visible=true 
@@ -15,15 +13,8 @@ func _process(delta):
 		
 	if $studio.global_position.x >105:
 		$studio.position.x-=4
-		
-		
-
-
-	
-	
-	
 
 
 func _on_Timer_timeout():
 	get_tree().change_scene("res://start_menu.tscn")
-	pass # Replace with function body.
+
