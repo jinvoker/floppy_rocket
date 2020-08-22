@@ -1,6 +1,6 @@
 extends Node2D
 
-var rocketlist=['res://sprites/rockets/rocket.png','res://sprites/rockets/rocket_1.png','res://sprites/rockets/rocket_2.png'] # Absolute path of rocketfile to be loaded.
+var rocketlist=['res://sprites/rockets/rocket.png','res://sprites/rockets/rocket_1.png','res://sprites/rockets/rocket_2.png','res://sprites/rockets/rocket_3.png'] # Absolute path of rocketfile to be loaded.
 var y=35  # Vertical distance between rockets in selection screen (start).
 
 var count=1
