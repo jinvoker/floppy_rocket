@@ -9,6 +9,8 @@ var rockettexture=load(str(global.rocketselect))
 func _ready():
 	print('rocket=',global.rocketselect)
 	$Sprite.set_texture(load(global.rocketselect))
+	$AudioStreamPlayer2D.play(0.0)
+
 	
 	set_angular_velocity(1)
 
@@ -37,4 +39,5 @@ func _process(delta):
 
 func _on_VisibilityNotifier2D_screen_exited():
 	get_tree().change_scene("res://game_over.tscn")
+	
 	

@@ -19,7 +19,7 @@ scale = Vector2( 4.84249, 1.89945 )
 texture = ExtResource( 2 )
 texture_scale = 0.1
 color = Color( 0.545098, 0.898039, 0.615686, 1 )
-energy = 9.0
+energy = 13.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.5

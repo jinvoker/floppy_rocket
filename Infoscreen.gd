@@ -9,5 +9,6 @@ func _process(delta):
 		
 		if Input.is_action_just_pressed("flap"):
 			get_tree().set_pause(false)
+			
 			visible=false
 			pass # Replace with function body.

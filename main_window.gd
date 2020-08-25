@@ -9,7 +9,7 @@ var obstacle_bot_load = preload("res://obstacles_bottom.tscn")
 
 func _ready():
 	global.score=0
-
+	
 
 
 func _on_Timer_timeout():
