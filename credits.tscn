@@ -1,22 +1,33 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://src/credits.gd" type="Script" id=2]
 [ext_resource path="res://sounds/awesomeness.wav" type="AudioStream" id=3]
+[ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=4]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="DynamicFont" id=1]
+size = 15
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 15
+font_data = ExtResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 0, 230 )
 script = ExtResource( 2 )
 
-[node name="Label" type="Label" parent="."]
+[node name="CREDITS" type="Label" parent="Node2D"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 37.5442
+margin_left = 27.8925
 margin_top = 27.9492
-margin_right = 105.544
-margin_bottom = 44.9492
+margin_right = 114.893
+margin_bottom = 48.9492
 custom_fonts/font = ExtResource( 1 )
 text = "CREDITS"
 align = 1
@@ -24,7 +35,330 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="LEAD DEVELOPER " type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 16.2615
+margin_top = 83.5306
+margin_right = 128.261
+margin_bottom = 100.531
+custom_fonts/font = SubResource( 1 )
+text = "LEAD DEVELOPER "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jin" type="Label" parent="Node2D/LEAD DEVELOPER "]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -60.1122
+margin_top = 25.2845
+margin_right = 51.8878
+margin_bottom = 52.2845
+custom_fonts/font = SubResource( 2 )
+text = "Jin
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LOGIC PROGRAMMER" type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 12.0119
+margin_top = 153.951
+margin_right = 134.012
+margin_bottom = 180.951
+custom_fonts/font = SubResource( 1 )
+text = "LOGIC PROGRAMMER
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SManoj" type="Label" parent="Node2D/LOGIC PROGRAMMER"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -60.2526
+margin_top = 27.0
+margin_right = 51.7474
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 2 )
+text = "S.Manoj
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CONCEPT" type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 18.7792
+margin_top = 223.532
+margin_right = 130.779
+margin_bottom = 240.532
+custom_fonts/font = SubResource( 1 )
+text = "CONCEPT "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PMGanesh Kumar" type="Label" parent="Node2D/CONCEPT"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -54.7401
+margin_top = 31.7331
+margin_right = 57.2599
+margin_bottom = 58.7331
+custom_fonts/font = SubResource( 2 )
+text = "P.M.Ganesh Kumar
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ART" type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 20.0391
+margin_top = 304.148
+margin_right = 132.039
+margin_bottom = 321.148
+custom_fonts/font = SubResource( 1 )
+text = "ART"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S Adithya Varun " type="Label" parent="Node2D/ART"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -58.8284
+margin_top = 31.7159
+margin_right = 53.1716
+margin_bottom = 58.7159
+custom_fonts/font = SubResource( 2 )
+text = "S. Adithya Varun 
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PLAY TESTERS" type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 17.2107
+margin_top = 385.465
+margin_right = 129.211
+margin_bottom = 402.465
+custom_fonts/font = SubResource( 1 )
+text = "PLAY TESTERS"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="playtesters" type="Label" parent="Node2D/PLAY TESTERS"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -79.9898
+margin_top = -4.84799
+margin_right = 65.0102
+margin_bottom = 97.152
+custom_fonts/font = SubResource( 2 )
+text = " Parthibhan Appu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="playtesters2" type="Label" parent="Node2D/PLAY TESTERS"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -74.9388
+margin_top = 26.0197
+margin_right = 70.0612
+margin_bottom = 128.02
+custom_fonts/font = SubResource( 2 )
+text = "Diya Arul Murugan"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="playtesters3" type="Label" parent="Node2D/PLAY TESTERS"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -73.8163
+margin_top = 58.5711
+margin_right = 71.1837
+margin_bottom = 160.571
+custom_fonts/font = SubResource( 2 )
+text = "Shreestha Arul Murugan"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ROCKET SUBMISSIONS" type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 3.9696
+margin_top = 540.875
+margin_right = 140.97
+margin_bottom = 582.875
+custom_fonts/font = SubResource( 1 )
+text = "ROCKET SUBMISSIONS
+
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rocketsubmissions" type="Label" parent="Node2D/ROCKET SUBMISSIONS"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -92.2628
+margin_top = 20.1587
+margin_right = 90.7372
+margin_bottom = 62.1587
+custom_fonts/font = SubResource( 2 )
+text = "
+S. Adithya Varun  
+[ Rocket -4 ]"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="attribution" type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -0.666626
+margin_top = 635.517
+margin_right = 144.0
+margin_bottom = 1092.0
+custom_fonts/font = SubResource( 2 )
+text = "--------------------
+All music and SFX
+ used are opensource under creative commons license.
+
+Atribution/Thanks to music artists :
+
+opening-Avgvst 		     
+[ Main menu ]
+
+movingrightalong- Wolfgang   
+[ Gameplay BGM ]
+
+game over -Avgvst             [ Game over screen ]
+
+Awesomeness -MrPoly 	     [ Credits ]
+
+yell5-HaelDB 		    
+ [ Developer logo ]
+
+impactsplash3-Independent.nu
+[ Developer logo] 
+--------------------"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SOFTWARES USED" type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 13.3758
+margin_top = 1113.38
+margin_right = 125.376
+margin_bottom = 1155.38
+custom_fonts/font = SubResource( 1 )
+text = "SOFTWARES USED
+
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="aboutgame" type="Label" parent="Node2D/SOFTWARES USED"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -69.642
+margin_top = 53.7037
+margin_right = 74.358
+margin_bottom = 394.0
+custom_fonts/font = SubResource( 2 )
+text = "This game is open source and is released under MIT License, free 
+to share, redistribute, copy, edit or even use commercially.
+
+
+Contribute to this project with assets and source @ 
+
+https://github.com/jinvoker/floppy_rocket
+
+
+Send in your rocket submissions. feed backs to : 
+zerogamestudio0
+@gmail.com
+"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+percent_visible = -0.00393701
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GAMESTUDIO" type="Label" parent="Node2D"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -12.7749
+margin_top = 1761.19
+margin_right = 156.225
+margin_bottom = 1818.19
+custom_fonts/font = SubResource( 1 )
+text = "ZERO GAME STUDIO
+2020
+
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Node2D"]
+visible = false
 stream = ExtResource( 3 )
 volume_db = 7.0
 autoplay = true

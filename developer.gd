@@ -8,10 +8,10 @@ func _process(delta):
 	if $zero.global_position.y < 127:
 		$zero.position.y+=4
 		
-	if $game.global_position.x <42:
+	if $game.global_position.x <38:
 		$game.position.x+=4
 		
-	if $studio.global_position.x >105:
+	if $studio.global_position.x >95:
 		$studio.position.x-=4
 
 
