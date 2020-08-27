@@ -1,9 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://src/credits.gd" type="Script" id=2]
 [ext_resource path="res://sounds/awesomeness.wav" type="AudioStream" id=3]
 [ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://sprites/icons/godot.png" type="Texture" id=5]
+[ext_resource path="res://sprites/icons/piksel.png" type="Texture" id=6]
+[ext_resource path="res://sprites/icons/krita.png" type="Texture" id=7]
+[ext_resource path="res://sprites/icons/gimp.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 15
@@ -18,7 +22,6 @@ font_data = ExtResource( 4 )
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 0, 230 )
 script = ExtResource( 2 )
-upspeed = 0.5
 
 [node name="CREDITS" type="Label" parent="Node2D"]
 anchor_left = 0.5
@@ -310,13 +313,33 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="godot" type="Sprite" parent="Node2D/SOFTWARES USED"]
+position = Vector2( 58.2691, 87.5271 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+
+[node name="piksel" type="Sprite" parent="Node2D/SOFTWARES USED"]
+position = Vector2( 58.8991, 163.122 )
+scale = Vector2( 0.13, 0.13 )
+texture = ExtResource( 6 )
+
+[node name="gimp" type="Sprite" parent="Node2D/SOFTWARES USED"]
+position = Vector2( 58.2692, 234.52 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+
+[node name="krita" type="Sprite" parent="Node2D/SOFTWARES USED"]
+position = Vector2( 56.6661, 327.575 )
+scale = Vector2( 0.08, 0.08 )
+texture = ExtResource( 7 )
+
 [node name="aboutgame" type="Label" parent="Node2D/SOFTWARES USED"]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -69.642
-margin_top = 312.314
+margin_top = 407.451
 margin_right = 74.358
-margin_bottom = 652.61
+margin_bottom = 747.747
 custom_fonts/font = SubResource( 2 )
 text = "This game is open source and is released under MIT License, free 
 to share, redistribute, copy, edit or even use commercially.
@@ -343,9 +366,9 @@ __meta__ = {
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -12.7749
-margin_top = 2019.8
+margin_top = 2114.94
 margin_right = 156.225
-margin_bottom = 2076.8
+margin_bottom = 2171.94
 custom_fonts/font = SubResource( 1 )
 text = "ZERO GAME STUDIO
 2020

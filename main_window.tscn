@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://rocket.tscn" type="PackedScene" id=2]
@@ -10,6 +10,10 @@
 [ext_resource path="res://tap_icon.png" type="Texture" id=8]
 
 [sub_resource type="ImageTexture" id=1]
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 7 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 22
@@ -107,21 +111,21 @@ texture = ExtResource( 8 )
 centered = false
 
 [node name="getready" type="Label" parent="Infoscreen"]
-margin_left = 21.341
+margin_left = 11.4197
 margin_top = 63.9947
-margin_right = 149.341
+margin_right = 139.42
 margin_bottom = 84.9947
-custom_fonts/font = ExtResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "GET READY !"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="alive" type="Label" parent="Infoscreen"]
-margin_left = -4.05847
-margin_top = 165.498
-margin_right = 148.942
-margin_bottom = 211.498
+margin_left = 6.80945
+margin_top = 165.0
+margin_right = 137.809
+margin_bottom = 211.0
 custom_fonts/font = ExtResource( 1 )
 text = "to keep floppy rocket alive"
 align = 1
