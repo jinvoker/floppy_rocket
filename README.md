@@ -1,9 +1,12 @@
-# FLOPPY ROCKET
+<h1 align="center">FLOPPY ROCKET</h1>
+<p align="center">A simple and fun one touch hyper casual game.</p>
 
 
-A simple and fun one touch hyper casual game.
 
-Floppy rocket is a side-scrolling one touch hyper casual game featuring 2D retro style graphics.The game is a simple time killer and means to make your boring wait times enjoyable. The objective is to direct a defunct floppy rocket bird who moves continuously to the right, between sets of obstacle pipes. If the rocket touches the pipes, you lose. The rockety flops and boosts into life upward each time that the player taps the screen, if the screen is not tapped, the rocket  falls because of gravity, navigate your rocket endlessly through space and time.There is always variation or evolution in gameplay throughout the game, as the pipes always have the different gaps between them and there is no end to the gameplay. The game is a simple time killer and the boost and ding sounds and the rising score are your rewards.
+
+
+
+<b><i>Floppy rocket</i></b> is a side-scrolling one touch hyper casual game featuring 2D retro style graphics.The game is a simple time killer and means to make your boring wait times enjoyable. The objective is to direct a defunct floppy rocket bird who moves continuously to the right, between sets of obstacle pipes. If the rocket touches the pipes, you lose. The rockety flops and boosts into life upward each time that the player taps the screen, if the screen is not tapped, the rocket  falls because of gravity, navigate your rocket endlessly through space and time.There is always variation or evolution in gameplay throughout the game, as the pipes always have the different gaps between them and there is no end to the gameplay. The game is a simple time killer and the boost and ding sounds and the rising score are your rewards.
 
 ### THE GAME
 
