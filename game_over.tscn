@@ -8,22 +8,6 @@
 [node name="Node" type="Node"]
 script = ExtResource( 2 )
 
-[node name="quit" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -29.3702
-margin_top = -15.7293
-margin_right = 17.6298
-margin_bottom = 11.2708
-custom_fonts/font = ExtResource( 1 )
-text = "quit"
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="GAME_OVER" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
@@ -42,9 +26,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -54.8941
+margin_left = -54.4737
 margin_top = -55.1831
-margin_right = 53.1059
+margin_right = 53.5263
 margin_bottom = -25.175
 custom_fonts/font = ExtResource( 1 )
 text = "play again"
@@ -53,10 +37,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="quit" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.1657
+margin_top = -15.7293
+margin_right = 21.8343
+margin_bottom = 11.2708
+custom_fonts/font = ExtResource( 1 )
+text = "quit"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="main_menu" type="Button" parent="."]
-margin_left = 17.7722
+margin_left = 18.1927
 margin_top = 148.492
-margin_right = 123.772
+margin_right = 124.192
 margin_bottom = 175.492
 custom_fonts/font = ExtResource( 1 )
 text = "main menu"
@@ -71,6 +71,6 @@ position = Vector2( 126.038, 223.769 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
-[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="play_again" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="main_menu" to="." method="_on_main_menu_pressed"]
