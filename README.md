@@ -19,3 +19,9 @@ Collaborate with this project send in your rocket sprites, suggestions or code. 
 ### ON GOOGLE PLAY STORE
 
 The game is now available on google play store. Download now.
+
+### CONTRIBUTORS
+
+* [List of contributors][contribute]
+
+[contribute]: https://github.com/jinvoker/floppy_rocket/graphs/contributors
