@@ -107,10 +107,10 @@ texture = ExtResource( 8 )
 centered = false
 
 [node name="getready" type="Label" parent="Infoscreen"]
-margin_left = 23.5188
+margin_left = 21.341
 margin_top = 63.9947
-margin_right = 121.519
-margin_bottom = 80.9947
+margin_right = 149.341
+margin_bottom = 84.9947
 custom_fonts/font = ExtResource( 1 )
 text = "GET READY !"
 __meta__ = {

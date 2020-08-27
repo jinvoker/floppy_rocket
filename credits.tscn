@@ -18,6 +18,7 @@ font_data = ExtResource( 4 )
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 0, 230 )
 script = ExtResource( 2 )
+upspeed = 0.5
 
 [node name="CREDITS" type="Label" parent="Node2D"]
 anchor_left = 0.5
@@ -101,9 +102,9 @@ __meta__ = {
 [node name="CONCEPT" type="Label" parent="Node2D"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = 18.7792
+margin_left = 15.2792
 margin_top = 223.532
-margin_right = 130.779
+margin_right = 127.279
 margin_bottom = 240.532
 custom_fonts/font = SubResource( 1 )
 text = "CONCEPT "
@@ -116,9 +117,9 @@ __meta__ = {
 [node name="PMGanesh Kumar" type="Label" parent="Node2D/CONCEPT"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -54.7401
+margin_left = -55.2401
 margin_top = 31.7331
-margin_right = 57.2599
+margin_right = 56.7599
 margin_bottom = 58.7331
 custom_fonts/font = SubResource( 2 )
 text = "P.M.Ganesh Kumar
@@ -132,9 +133,9 @@ __meta__ = {
 [node name="ART" type="Label" parent="Node2D"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = 20.0391
+margin_left = 14.4091
 margin_top = 304.148
-margin_right = 132.039
+margin_right = 126.409
 margin_bottom = 321.148
 custom_fonts/font = SubResource( 1 )
 text = "ART"
@@ -147,9 +148,9 @@ __meta__ = {
 [node name="S Adithya Varun " type="Label" parent="Node2D/ART"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -58.8284
+margin_left = -57.8284
 margin_top = 31.7159
-margin_right = 53.1716
+margin_right = 54.1716
 margin_bottom = 58.7159
 custom_fonts/font = SubResource( 2 )
 text = "S. Adithya Varun 
@@ -266,7 +267,7 @@ text = "--------------------
 All music and SFX
  used are opensource under creative commons license.
 
-Atribution/Thanks to music artists :
+Attribution/Thanks to music artists :
 
 opening-Avgvst 		     
 [ Main menu ]
@@ -279,7 +280,7 @@ game over -Avgvst             [ Game over screen ]
 Awesomeness -MrPoly 	     [ Credits ]
 
 yell5-HaelDB 		    
- [ Developer logo ]
+[ Developer logo ]
 
 impactsplash3-Independent.nu
 [ Developer logo] 
@@ -313,9 +314,9 @@ __meta__ = {
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -69.642
-margin_top = 53.7037
+margin_top = 312.314
 margin_right = 74.358
-margin_bottom = 394.0
+margin_bottom = 652.61
 custom_fonts/font = SubResource( 2 )
 text = "This game is open source and is released under MIT License, free 
 to share, redistribute, copy, edit or even use commercially.
@@ -334,7 +335,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-percent_visible = -0.00393701
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -343,9 +343,9 @@ __meta__ = {
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -12.7749
-margin_top = 1761.19
+margin_top = 2019.8
 margin_right = 156.225
-margin_bottom = 1818.19
+margin_bottom = 2076.8
 custom_fonts/font = SubResource( 1 )
 text = "ZERO GAME STUDIO
 2020
@@ -357,8 +357,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="continue" type="Label" parent="Node2D/GAMESTUDIO"]
+margin_left = 39.7114
+margin_top = 248.104
+margin_right = 150.711
+margin_bottom = 262.104
+custom_fonts/font = ExtResource( 1 )
+text = "Click to continue."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="Node2D/GAMESTUDIO"]
+position = Vector2( 82.8291, 15.9229 )
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Node2D"]
 visible = false
 stream = ExtResource( 3 )
 volume_db = 7.0
 autoplay = true
+[connection signal="viewport_exited" from="Node2D/GAMESTUDIO/VisibilityNotifier2D" to="Node2D" method="_on_VisibilityNotifier2D_viewport_exited"]
