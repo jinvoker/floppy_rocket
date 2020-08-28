@@ -33,8 +33,12 @@ scale_random = 0.4
 color_ramp = SubResource( 3 )
 
 [node name="RigidBody2D" type="RigidBody2D"]
+mass = 0.204082
 gravity_scale = 4.0
 script = ExtResource( 2 )
+angvel = 6
+rotdeg = 77
+couvel = 4
 
 [node name="Sprite" type="Sprite" parent="."]
 rotation = 1.5708
