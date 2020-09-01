@@ -13,7 +13,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-obstacle_speed = 0.5
+obstacle_speed = 1.0
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )

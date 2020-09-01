@@ -14,7 +14,7 @@ extents = Vector2( 1.15988, 73.8144 )
 show_behind_parent = true
 position = Vector2( 140, -59.8978 )
 script = ExtResource( 1 )
-obstacle_speed = 0.5
+obstacle_speed = 1.0
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 3 )
