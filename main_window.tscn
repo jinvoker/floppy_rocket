@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://others/game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://rocket.tscn" type="PackedScene" id=2]
-[ext_resource path="res://main_window.gd" type="Script" id=3]
-[ext_resource path="res://pause.png" type="Texture" id=4]
-[ext_resource path="res://Infoscreen.gd" type="Script" id=5]
-[ext_resource path="res://TextureRect.gd" type="Script" id=6]
-[ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://tap_icon.png" type="Texture" id=8]
+[ext_resource path="res://src/main_window.gd" type="Script" id=3]
+[ext_resource path="res://sprites/images/pause.png" type="Texture" id=4]
+[ext_resource path="res://src/Infoscreen.gd" type="Script" id=5]
+[ext_resource path="res://src/TextureRect.gd" type="Script" id=6]
+[ext_resource path="res://others/pixeldroidMenuRegular.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://sprites/images/tap_icon.png" type="Texture" id=8]
 
 [sub_resource type="ImageTexture" id=1]
 

@@ -1,7 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://rocketload.gd" type="Script" id=1]
-[ext_resource path="res://game_font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://src/rocketload.gd" type="Script" id=1]
+[ext_resource path="res://others/game_font.tres" type="DynamicFont" id=2]
+
+
 
 [node name="rocketload" type="Node2D"]
 script = ExtResource( 1 )

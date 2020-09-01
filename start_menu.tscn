@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
-[ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://others/game_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://others/pixeldroidMenuRegular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://dummy_rocket_vertical.tscn" type="PackedScene" id=3]
-[ext_resource path="res://start_menu.gd" type="Script" id=4]
+[ext_resource path="res://src/start_menu.gd" type="Script" id=4]
 [ext_resource path="res://sounds/Opening.ogg" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
@@ -76,9 +76,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 16.3134
+margin_left = 27.6527
 margin_top = 223.941
-margin_right = 79.3134
+margin_right = 90.6527
 margin_bottom = 244.941
 custom_fonts/font = ExtResource( 1 )
 align = 1

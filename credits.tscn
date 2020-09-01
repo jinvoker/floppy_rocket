@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://game_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://others/game_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://src/credits.gd" type="Script" id=2]
 [ext_resource path="res://sounds/awesomeness.wav" type="AudioStream" id=3]
-[ext_resource path="res://pixeldroidMenuRegular.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://sprites/icons/godot.png" type="Texture" id=5]
-[ext_resource path="res://sprites/icons/piksel.png" type="Texture" id=6]
-[ext_resource path="res://sprites/icons/krita.png" type="Texture" id=7]
-[ext_resource path="res://sprites/icons/gimp.png" type="Texture" id=8]
+[ext_resource path="res://others/pixeldroidMenuRegular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://sprites/images/godot.png" type="Texture" id=5]
+[ext_resource path="res://sprites/images/piksel.png" type="Texture" id=6]
+[ext_resource path="res://sprites/images/krita.png" type="Texture" id=7]
+[ext_resource path="res://sprites/images/gimp.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 15
@@ -22,7 +22,6 @@ font_data = ExtResource( 4 )
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 0, 230 )
 script = ExtResource( 2 )
-upspeed = 0.5
 
 [node name="CREDITS" type="Label" parent="Node2D"]
 anchor_left = 0.5

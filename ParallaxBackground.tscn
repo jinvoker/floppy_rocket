@@ -4,6 +4,10 @@
 [ext_resource path="res://obstacles_top.tscn" type="PackedScene" id=2]
 
 
+
+
+
+
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
