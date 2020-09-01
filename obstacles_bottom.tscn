@@ -8,11 +8,12 @@ extents = Vector2( 12.733, 79.8575 )
 
 [node name="Area2D" type="Area2D"]
 show_behind_parent = true
-position = Vector2( 140, 170 )
+position = Vector2( 140, 152.757 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+obstacle_speed = 0.5
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

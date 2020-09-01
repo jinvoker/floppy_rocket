@@ -35,6 +35,6 @@ func add_buttons():
 		count+=1 #Debug
 		
 func namer(which):
-	print(which.get_text()) 
+	#print(which.get_text()) # Debug - prints selection.
 	global.rocketselect=which.get_text()   
 	get_tree().change_scene("res://main_window.tscn")

@@ -11,4 +11,4 @@ func _process(delta):
 			get_tree().set_pause(false)
 			
 			visible=false
-			pass # Replace with function body.
+			

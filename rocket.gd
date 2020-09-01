@@ -8,7 +8,7 @@ export var rotdeg=70     # rotation degrees
 export var couvel= 3      # counter velocity
 
 func _ready():
-	print('rocket=',global.rocketselect)
+	# print('rocket=',global.rocketselect) # Debug - prints selected rocket
 	$Sprite.set_texture(load(global.rocketselect))
 	$AudioStreamPlayer2D.play(0.0)
 
@@ -27,8 +27,7 @@ func _process(delta):
 		set_angular_velocity(-angvel) #5
 		$AudioStreamPlayer.play(0.0)
 		
-	#if get_linear_velocity().x < 60:
-		#set_linear_velocity(Vector2(70,get_linear_velocity().y)) # needs some tweaking and logic analysis.
+	
 				
 		
 	if get_rotation_degrees() < -rotdeg:   #70

@@ -5,7 +5,8 @@ script/source = "extends Node2D
 
 
 func _ready():
-	print(folderload.folderlist)
+	#print(folderload.folderlist)
+	pass
 "
 
 [node name="test" type="Node2D"]
